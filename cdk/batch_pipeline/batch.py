@@ -54,7 +54,7 @@ class CdkBatchStack(core.Stack):
     def __init__(self, scope: core.Construct, id: str, vpc, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
 
-        name = "yolo-application-batch"
+        name = "mathworks-application-batch"
         
         bucket = s3.Bucket(self, name)
         bucket.apply_removal_policy(core.RemovalPolicy.DESTROY)

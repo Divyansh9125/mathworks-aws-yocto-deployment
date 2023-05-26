@@ -16,7 +16,7 @@ class CdkPipelineStack(core.Stack):
     def __init__(self, scope: core.Construct, id: str, vpc, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
 
-        name = "yolo-application"
+        name = "mathworks-application"
 
         # ECR repositories
         container_repository = ecr.Repository(
